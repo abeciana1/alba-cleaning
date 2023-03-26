@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Tips from '../lib/tips.json'
 
 export default function Home() {
 
