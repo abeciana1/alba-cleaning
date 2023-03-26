@@ -1,7 +1,7 @@
 import React from 'react'
-import { PropChild } from '@/types'
+import { PropChildI } from '@/types'
 
-export const PageMargin: React.FC<PropChild> = ({ children }) => {
+export const PageMargin: React.FC<PropChildI> = ({ children }) => {
     return (
         <section>
             {children}
