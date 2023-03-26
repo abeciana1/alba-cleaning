@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
 import { HeroSection } from '@/components/sections'
 
+
 export default function Home() {
 
   return (

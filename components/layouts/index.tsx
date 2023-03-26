@@ -3,7 +3,7 @@ import { PropChildI } from '@/types'
 
 export const PageMargin: React.FC<PropChildI> = ({ children }) => {
     return (
-        <section>
+        <section className="mx-12">
             {children}
         </section>
     )
