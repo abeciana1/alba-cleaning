@@ -1,5 +1,5 @@
 
-export type SliderImage = {
+export type SliderImageT = {
     image: string;
     alt: string;
 }
