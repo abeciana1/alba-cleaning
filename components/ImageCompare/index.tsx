@@ -26,6 +26,8 @@ export const ImageCompare: React.FC<ImageCompareI> = ({
                 <Image
                     src={images[currentIdx].image}
                     alt={images[currentIdx].alt}
+                    height={images[currentIdx].height}
+                    width={images[currentIdx].width}
                     className={`fade-in-${currentIdx} fade-out-${currentIdx}`}
                 />
             }
