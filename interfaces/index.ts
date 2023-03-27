@@ -10,3 +10,7 @@ export interface HeroSectionI {
     body: string;
     images: SliderImageT[]
 }
+
+export interface ImageCompareI {
+    images: SliderImageT[]
+}

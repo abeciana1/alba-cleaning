@@ -47,13 +47,13 @@
 /* exits */
 
 .fade-out-0 {
-	-webkit-animation: fade-out 1s ease-out backwards;
-            animation: fade-out 1s ease-out backwards;
+	-webkit-animation: fade-out 1.2s ease-out backwards;
+            animation: fade-out 1.2s ease-out backwards;
 }
 
 .fade-out-1 {
-	-webkit-animation: fade-out 1s ease-out backwards;
-            animation: fade-out 1s ease-out backwards;
+	-webkit-animation: fade-out 1.2s ease-out backwards;
+            animation: fade-out 1.2s ease-out backwards;
 }
 
 @-webkit-keyframes fade-out-0 {

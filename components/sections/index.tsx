@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
+import { ImageCompare } from '@/components/ImageCompare'
 
 export const HeroSection: React.FC<HeroSectionI> = ({
     title,
@@ -14,6 +15,11 @@ export const HeroSection: React.FC<HeroSectionI> = ({
                 <section>
                     <h1 className="text-foreground">{title}</h1>
                     <div className="text-xl">{ body }</div>
+                </section>
+                <section>
+                    <ImageCompare
+                        images={images}
+                    />
                 </section>
             </section>
         </PageMargin>
