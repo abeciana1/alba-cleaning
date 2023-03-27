@@ -1,6 +1,7 @@
 import React from 'react'
-import { HeroSectionI } from '@/types'
+import { HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
+import ImageSlider from "react-image-comparison-slider";
 
 export const HeroSection: React.FC<HeroSectionI> = ({
     title,

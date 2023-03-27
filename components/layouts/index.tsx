@@ -1,5 +1,5 @@
 import React from 'react'
-import { PropChildI } from '@/types'
+import { PropChildI } from '@/interfaces'
 
 export const PageMargin: React.FC<PropChildI> = ({ children }) => {
     return (
