@@ -1,8 +1,9 @@
+import { useEffect, useState } from 'react';
 import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
 import { HeroSection } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
-import { useEffect, useState } from 'react';
+import { PageMargin } from '@/components/layouts'
 
 const heroImages = [
   {
@@ -40,14 +41,20 @@ export default function Home() {
       />
       <HeroSection
         title="Let's get cleaning!"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        body="We're a dedicated and professional team of cleaners in the Killeen, TX, area; your mess is our mess."
         images={heroImages}
       />
-      <section>
-        <TipQuote
-          quote={currentQuote}
-        />
-      </section>
+      <PageMargin>
+        <section className="mx-auto text-center mt-20">
+          <h2>A cleaning tip for you</h2>
+          <TipQuote
+            quote={currentQuote}
+          />
+        </section>
+        <section className="mt-20">
+          <h2 className="text-center">Services we offer</h2>
+        </section>
+      </PageMargin>
     </>
   )
 }

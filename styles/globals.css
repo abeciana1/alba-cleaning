@@ -6,7 +6,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  line-height: 150%;
 }
 
 html,
@@ -55,4 +54,8 @@ h5 {
 h6 {
   @apply text-xl;
   line-height: 150%;
+}
+
+div, a, blockquote, p {
+  line-height: 150% !important;
 }
