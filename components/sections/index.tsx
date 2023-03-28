@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionI> = ({
         <PageMargin>
             <section className="grid grid-cols-1 md:grid-cols-2 gap-20 my-20">
                 <section className="md:w-11/12">
-                    <h1 className="text-foreground">{title}</h1>
+                    <h3 className="text-foreground">{title}</h3>
                     <div className="text-xl">{ body }</div>
                 </section>
                 <section>
@@ -71,7 +71,7 @@ export const HeroSectionReverse: React.FC<HeroSectionI> = ({
                     />
                 </section>
                 <section className="md:w-11/12">
-                    <h1 className="text-foreground">{title}</h1>
+                    <h3 className="text-foreground">{title}</h3>
                     <div className="text-xl">{ body }</div>
                 </section>
             </section>
