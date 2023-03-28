@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ImageCompareI } from '@/interfaces'
 import Image from 'next/image'
 
@@ -7,7 +7,6 @@ export const ImageCompare: React.FC<ImageCompareI> = ({
 }) => {
 
     const [currentIdx, setIdx] = useState(0)
-    const [ fade, setFade ] = useState("fade-in")
     
     useEffect(() => {
         if (currentIdx === 0) {
