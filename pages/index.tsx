@@ -1,6 +1,8 @@
 import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
 import { HeroSection } from '@/components/sections'
+import { TipQuote } from '@/components/Quote'
+import { useEffect, useState } from 'react';
 
 const heroImages = [
   {
@@ -19,6 +21,16 @@ const heroImages = [
 
 export default function Home() {
 
+  const randomIndexNum = (): number => {
+    return Math.floor(Math.random() * (Tips.length - 1))
+  }
+
+  const [ currentQuote, setQuote ] = useState<string>("")
+
+  useEffect(() => {
+    setQuote(Tips[randomIndexNum()])
+  }, [])
+
   return (
     <>
       <NextSeo
@@ -32,7 +44,9 @@ export default function Home() {
         images={heroImages}
       />
       <section>
-        
+        <TipQuote
+          quote={currentQuote}
+        />
       </section>
     </>
   )

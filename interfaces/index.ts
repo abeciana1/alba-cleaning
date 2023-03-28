@@ -14,3 +14,7 @@ export interface HeroSectionI {
 export interface ImageCompareI {
     images: SliderImageT[]
 }
+
+export interface QuoteI {
+    quote: string;
+}
