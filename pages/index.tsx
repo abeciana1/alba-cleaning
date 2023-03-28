@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
-import { HeroSection } from '@/components/sections'
+import { HeroSectionWithComparison } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 
@@ -39,7 +39,7 @@ export default function Home() {
         description="Sample text"
         canonical=""
       />
-      <HeroSection
+      <HeroSectionWithComparison
         title="Let's get cleaning!"
         body="We're a dedicated and professional team of cleaners in the Killeen, TX, area; your mess is our mess."
         images={heroImages}

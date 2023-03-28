@@ -3,7 +3,7 @@ import { HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
 import { ImageCompare } from '@/components/ImageCompare'
 
-export const HeroSection: React.FC<HeroSectionI> = ({
+export const HeroSectionWithComparison: React.FC<HeroSectionI> = ({
     title,
     body,
     images
