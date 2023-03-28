@@ -1,9 +1,10 @@
 import React from 'react'
-import { HeroSectionI } from '@/interfaces'
+import { HeroSectionWithComparisonI, HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
 import { ImageCompare } from '@/components/ImageCompare'
+import Image from 'next/image'
 
-export const HeroSectionWithComparison: React.FC<HeroSectionI> = ({
+export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = ({
     title,
     body,
     images
@@ -19,6 +20,32 @@ export const HeroSectionWithComparison: React.FC<HeroSectionI> = ({
                 <section>
                     <ImageCompare
                         images={images}
+                    />
+                </section>
+            </section>
+        </PageMargin>
+    )
+}
+
+export const HeroSection: React.FC<HeroSectionI> = ({
+    title,
+    body,
+    image
+}) => {
+
+    return (
+        <PageMargin>
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-20 my-20">
+                <section className="md:w-11/12">
+                    <h1 className="text-foreground">{title}</h1>
+                    <div className="text-xl">{ body }</div>
+                </section>
+                <section>
+                    <Image
+                        src={image.image}
+                        alt={image.alt}
+                        height={image.height}
+                        width={image.width}
                     />
                 </section>
             </section>
