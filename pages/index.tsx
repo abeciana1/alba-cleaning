@@ -40,8 +40,8 @@ export default function Home() {
         canonical=""
       />
       <HeroSectionWithComparison
-        title="Let's get cleaning!"
-        body="We're a dedicated and professional team of cleaners in the Killeen, TX, area. Making your mess, our mess."
+        title="Professional cleaning service for your home and office"
+        body="We're a dedicated, friendly, and reliable team of cleaners in the Killeen, TX, area. Making your mess, our mess."
       />
       <PageMargin>
         <section className="mx-auto text-center mt-20">

@@ -8,22 +8,30 @@ export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = (
     title,
     body
 }) => {
-
+    // className="top-hero-section bg-bottom"
     return (
-        <section className="bg-altPink">
+        <section>
             <PageMargin>
-                <section className="flex flex-col md:flex-row gap-5 md:gap-20 md:mb-20 md:py-20 items-center">
-                    <section className="md:w-11/12">
-                        <h1 className="text-background">{title}</h1>
-                        <div className="text-xl text-background">{ body }</div>
+                <section className="flex flex-col md:flex-row gap-5 md:mb-20 items-center">
+                    <section className="md:w-11/12 mx-10">
+                        <h1 className=" text-dishycoral">{title}</h1>
+                        <div className="w-3/4 text-2xl text-dishycoral">{ body }</div>
                     </section>
-                    <Image
-                        src="/cleaning-person-products.jpg"
-                        alt="Cleaning person with products"
-                        width={2000}
-                        height={1333}
-                        className="md:w-1/2 box-shadow-2xl shadow-altPink mb-5 rounded-xl"
-                    />
+                    <section className="w-4/5">
+                        <Image
+                            src="/cleaner-person.png"
+                            alt="Cleaning person"
+                            width={1146}
+                            height={1333}
+                        />
+                        {/* <Image
+                            src="/cleaning-person-products.jpg"
+                            alt="Cleaning person with products"
+                            width={2000}
+                            height={1333}
+                            className="w-5/6 mx-auto box-shadow-2xl shadow-altPink mb-5 rounded-3xl"
+                        /> */}
+                    </section>
                 </section>
             </PageMargin>
         </section>
