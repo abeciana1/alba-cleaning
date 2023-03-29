@@ -11,27 +11,20 @@ export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = (
 }) => {
     // className="top-hero-section bg-bottom"
     return (
-        <section>
+        <section className="bg-altYellow">
             <PageMargin>
                 <section className="flex flex-col md:flex-row gap-5 md:mb-20 items-center">
                     <section className="md:w-11/12 mx-10">
-                        <h1 className=" text-dishycoral">{title}</h1>
-                        <div className="w-3/4 text-2xl text-dishycoral">{ body }</div>
+                        <h1 className=" text-charcoal">{title}</h1>
+                        <div className="w-3/4 text-2xl text-charcoal">{ body }</div>
                     </section>
-                    <section className="w-4/5">
+                    <section className="w relative">
                         <Image
                             src={image.image}
                             alt={image.alt}
                             width={image.width}
                             height={image.height}
                         />
-                        {/* <Image
-                            src="/cleaning-person-products.jpg"
-                            alt="Cleaning person with products"
-                            width={2000}
-                            height={1333}
-                            className="w-5/6 mx-auto box-shadow-2xl shadow-altPink mb-5 rounded-3xl"
-                        /> */}
                     </section>
                 </section>
             </PageMargin>

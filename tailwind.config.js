@@ -102,6 +102,9 @@ module.exports = {
         },
         altPink: {
           DEFAULT: "#EDA0A8"
+        },
+        altYellow: {
+          DEFAULT: "#fdf2ec"
         }
       },
     },
