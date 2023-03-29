@@ -18,7 +18,7 @@ export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = (
                         <h1 className=" text-charcoal">{title}</h1>
                         <div className="w-3/4 text-2xl text-charcoal">{ body }</div>
                     </section>
-                    <section className="w relative">
+                    <section>
                         <Image
                             src={image.image}
                             alt={image.alt}
