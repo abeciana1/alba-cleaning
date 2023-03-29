@@ -1,10 +1,10 @@
 import React from 'react'
-import { HeroSectionWithComparisonI, HeroSectionI } from '@/interfaces'
+import { TopHeroSectionI, HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
 // import { ImageCompare } from '@/components/ImageCompare'
 import Image from 'next/image'
 
-export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = ({
+export const TopHeroSection: React.FC<TopHeroSectionI> = ({
     title,
     body,
     image

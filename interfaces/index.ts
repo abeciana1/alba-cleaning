@@ -5,7 +5,7 @@ export interface PropChildI {
     children: React.ReactNode;
 }
 
-export interface HeroSectionWithComparisonI {
+export interface TopHeroSectionI {
     title: string;
     body: string;
     image: SliderImageT;
@@ -24,3 +24,4 @@ export interface HeroSectionI {
     body: string;
     image: SliderImageT
 }
+
