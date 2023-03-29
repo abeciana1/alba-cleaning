@@ -8,7 +8,6 @@ export interface PropChildI {
 export interface HeroSectionWithComparisonI {
     title: string;
     body: string;
-    images: SliderImageT[]
 }
 
 export interface ImageCompareI {

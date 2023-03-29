@@ -1,29 +1,32 @@
 import React from 'react'
 import { HeroSectionWithComparisonI, HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
-import { ImageCompare } from '@/components/ImageCompare'
+// import { ImageCompare } from '@/components/ImageCompare'
 import Image from 'next/image'
 
 export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = ({
     title,
-    body,
-    images
+    body
 }) => {
 
     return (
-        <PageMargin>
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-20 my-20">
-                <section className="md:w-11/12">
-                    <h1 className="text-foreground">{title}</h1>
-                    <div className="text-xl">{ body }</div>
-                </section>
-                <section>
-                    <ImageCompare
-                        images={images}
+        <section className="bg-altPink">
+            <PageMargin>
+                <section className="flex flex-col md:flex-row gap-5 md:gap-20 md:mb-20 md:py-20 items-center">
+                    <section className="md:w-11/12">
+                        <h1 className="text-background">{title}</h1>
+                        <div className="text-xl text-background">{ body }</div>
+                    </section>
+                    <Image
+                        src="/cleaning-person-products.jpg"
+                        alt="Cleaning person with products"
+                        width={2000}
+                        height={1333}
+                        className="md:w-1/2 box-shadow-2xl shadow-altPink mb-5 rounded-xl"
                     />
                 </section>
-            </section>
-        </PageMargin>
+            </PageMargin>
+        </section>
     )
 }
 

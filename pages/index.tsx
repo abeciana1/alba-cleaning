@@ -5,20 +5,20 @@ import { HeroSectionWithComparison, HeroSection, HeroSectionReverse } from '@/co
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 
-const heroImages = [
-  {
-    image: "https://media.graphassets.com/output=format:webp/ukpMvg7RqSBYLuEX3GSV",
-    alt: "Dirty living room graphic",
-    height: 3000,
-    width: 5000
-  },
-  {
-    image: "https://media.graphassets.com/output=format:webp/bnA5RAplSyiXH9DLvEEf",
-    alt: "Clean living room graphic",
-    height: 3000,
-    width: 5000
-  }
-]
+// const heroImages = [
+//   {
+//     image: "https://media.graphassets.com/output=format:webp/ukpMvg7RqSBYLuEX3GSV",
+//     alt: "Dirty living room graphic",
+//     height: 3000,
+//     width: 5000
+//   },
+//   {
+//     image: "https://media.graphassets.com/output=format:webp/bnA5RAplSyiXH9DLvEEf",
+//     alt: "Clean living room graphic",
+//     height: 3000,
+//     width: 5000
+//   }
+// ]
 
 export default function Home() {
 
@@ -41,8 +41,7 @@ export default function Home() {
       />
       <HeroSectionWithComparison
         title="Let's get cleaning!"
-        body="We're a dedicated and professional team of cleaners in the Killeen, TX, area; your mess is our mess."
-        images={heroImages}
+        body="We're a dedicated and professional team of cleaners in the Killeen, TX, area. Making your mess, our mess."
       />
       <PageMargin>
         <section className="mx-auto text-center mt-20">
