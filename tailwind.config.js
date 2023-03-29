@@ -100,6 +100,9 @@ module.exports = {
           800: "#1c293c",
           900: "#0e172a",
         },
+        altPink: {
+          DEFAULT: "#EDA0A8"
+        }
       },
     },
   },
