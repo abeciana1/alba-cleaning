@@ -59,9 +59,3 @@ h6 {
 div, a, blockquote, p {
   line-height: 150% !important;
 }
-
-.top-hero-section {
-  background-image: url('/bubbles background.webp');
-  background-repeat: no-repeat;
-}
-
