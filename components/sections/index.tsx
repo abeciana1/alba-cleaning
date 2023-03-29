@@ -6,7 +6,8 @@ import Image from 'next/image'
 
 export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = ({
     title,
-    body
+    body,
+    image
 }) => {
     // className="top-hero-section bg-bottom"
     return (
@@ -19,10 +20,10 @@ export const HeroSectionWithComparison: React.FC<HeroSectionWithComparisonI> = (
                     </section>
                     <section className="w-4/5">
                         <Image
-                            src="/cleaner-person.png"
-                            alt="Cleaning person"
-                            width={1146}
-                            height={1333}
+                            src={image.image}
+                            alt={image.alt}
+                            width={image.width}
+                            height={image.height}
                         />
                         {/* <Image
                             src="/cleaning-person-products.jpg"

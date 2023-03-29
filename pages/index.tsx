@@ -42,17 +42,18 @@ export default function Home() {
       <HeroSectionWithComparison
         title="Professional cleaning service for your home and office"
         body="We're a dedicated, friendly, and reliable team of cleaners in the Killeen, TX, area. Making your mess, our mess."
+        image={{
+          image: "/cleaner-person.png",
+          alt: "Cleaning person",
+          width: 1146,
+          height: 1333
+        }}
       />
       <PageMargin>
-        <section className="mx-auto text-center mt-20">
-          <h2>A cleaning tip for you</h2>
-          <TipQuote
-            quote={currentQuote}
-          />
-        </section>
         <section className="mt-20">
           <h2 className="text-center">Services we offer</h2>
-          <div className="text-xl text-center"> Our comprehensive cleaning package includes dusting furniture, appliances, and fixtures; vacuuming and mopping floors; thorough cleaning of each room in your house or office; sanitizing bathrooms and kitchen surfaces; as well as de-cluttering and organizing any living spaces.</div>
+          <div className="text-xl text-center"> Our comprehensive cleaning package includes, but no limited to:</div>
+           {/* dusting furniture, appliances, and fixtures; vacuuming and mopping floors; thorough cleaning of each room in your house or office; sanitizing bathrooms and kitchen surfaces; as well as de-cluttering and organizing any living spaces. */}
           <section className="mb-20">
             <HeroSection
               title="Your home is our home!"
@@ -77,6 +78,12 @@ export default function Home() {
               }}
             />
           </section>
+        </section>
+        <section className="mx-auto text-center mt-20">
+          <h2>A cleaning tip for you</h2>
+          <TipQuote
+            quote={currentQuote}
+          />
         </section>
       </PageMargin>
     </>
