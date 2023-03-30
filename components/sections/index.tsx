@@ -12,10 +12,10 @@ export const TopHeroSection: React.FC<TopHeroSectionI> = ({
     return (
         <section className="bg-chineseviolet-100 h-fit">
             <PageMargin>
-                <section className="flex flex-col md:flex-row gap-5 md:mb-20 items-center">
-                    <section className="md:w-11/12 mx-10">
-                        <h1 className="text-charcoal">{title}</h1>
-                        <div className="w-3/4 text-2xl text-charcoal">{ body }</div>
+                <section className="flex flex-col md:flex-row py-10 md:py-0 gap-5 md:mb-20 items-center">
+                    <section>
+                        <h1 className="text-charcoal text-4xl lg:text-5xl">{title}</h1>
+                        <div className="lg:w-3/4 text-2xl lg:text-3xl text-charcoal">{ body }</div>
                     </section>
                     <section className="h-10/12">
                         <Image
