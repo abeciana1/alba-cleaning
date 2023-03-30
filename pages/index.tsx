@@ -12,6 +12,7 @@ import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
 import Image from 'next/image'
+import { Teaser } from '@/components/utils/Teaser'
 
 export default function Home() {
 
@@ -59,8 +60,14 @@ export default function Home() {
             </div>
           </section>
         </TwoColGrid>
+        <section className="text-center pt-10 md:pt-20">
+          <h2>Our two-step process</h2>
+        </section>
         <ThreeColGrid>
-          <section></section>
+          <Teaser
+            title="Book your appointment"
+            body=""
+          />
           <section>
             <Image
               src="/gloves-heart.webp"
@@ -69,7 +76,10 @@ export default function Home() {
               height={1333}
             />
           </section>
-          <section></section>
+          <Teaser
+            title="Sit back and relax"
+            body=""
+          />
         </ThreeColGrid>
       </PageMargin>
       <PageMargin>

@@ -31,3 +31,8 @@ export interface SectionTagI {
     text: string;
     color: string
 }
+
+export interface TeaserI {
+    title: string;
+    body: string;
+}
