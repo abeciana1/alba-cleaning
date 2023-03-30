@@ -4,6 +4,7 @@ import Tips from '../lib/tips.json'
 import { TopHeroSection, HeroSection, HeroSectionReverse } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
+import { SectionTag } from '@/components/utils/SectionTag'
 
 export default function Home() {
 
@@ -34,6 +35,12 @@ export default function Home() {
           height: 1333
         }}
       />
+      <PageMargin addClass="py-10">
+        <SectionTag
+          text="About us"
+          
+        />
+      </PageMargin>
       <PageMargin>
         <section className="mt-20">
           <h2 className="text-center">Services we offer</h2>
