@@ -13,6 +13,8 @@ import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
 import Image from 'next/image'
 import { Teaser } from '@/components/utils/Teaser'
+import callIcon from '@/public/call'
+import relaxIcon from '@/public/relax'
 
 export default function Home() {
 
