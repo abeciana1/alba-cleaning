@@ -6,7 +6,7 @@ export interface PropChildI {
 }
 
 export interface AddClassNameI {
-    addClass: string;
+    addClass?: string;
 }
 
 export interface PageMarginI extends PropChildI, AddClassNameI {}
