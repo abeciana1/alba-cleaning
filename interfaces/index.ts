@@ -17,10 +17,6 @@ export interface TopHeroSectionI {
     image: SliderImageT;
 }
 
-export interface ImageCompareI {
-    images: SliderImageT[]
-}
-
 export interface QuoteI {
     quote: string;
 }
