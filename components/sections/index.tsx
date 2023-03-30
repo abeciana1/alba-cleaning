@@ -1,7 +1,6 @@
 import React from 'react'
 import { TopHeroSectionI, HeroSectionI } from '@/interfaces'
 import { PageMargin } from '@/components/layouts'
-// import { ImageCompare } from '@/components/ImageCompare'
 import Image from 'next/image'
 
 export const TopHeroSection: React.FC<TopHeroSectionI> = ({
@@ -9,16 +8,16 @@ export const TopHeroSection: React.FC<TopHeroSectionI> = ({
     body,
     image
 }) => {
-    // className="top-hero-section bg-bottom"
+
     return (
-        <section className="bg-altYellow">
+        <section className="bg-chineseviolet-100 h-fit">
             <PageMargin>
                 <section className="flex flex-col md:flex-row gap-5 md:mb-20 items-center">
                     <section className="md:w-11/12 mx-10">
-                        <h1 className=" text-charcoal">{title}</h1>
+                        <h1 className="text-charcoal">{title}</h1>
                         <div className="w-3/4 text-2xl text-charcoal">{ body }</div>
                     </section>
-                    <section>
+                    <section className="h-10/12">
                         <Image
                             src={image.image}
                             alt={image.alt}

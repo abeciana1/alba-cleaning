@@ -28,7 +28,7 @@ export default function Home() {
         title="Professional cleaning service for your home and office"
         body="We're a dedicated, friendly, and reliable team of cleaners in the Killeen, TX, area. Making your mess, our mess."
         image={{
-          image: "/cleaning-person-with-background.png",
+          image: "/cleaning-person-with-violet-background.webp",
           alt: "Cleaning person",
           width: 1146,
           height: 1333
