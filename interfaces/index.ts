@@ -24,4 +24,3 @@ export interface HeroSectionI {
     body: string;
     image: SliderImageT
 }
-
