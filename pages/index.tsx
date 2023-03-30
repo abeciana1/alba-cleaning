@@ -38,7 +38,7 @@ export default function Home() {
       <PageMargin addClass="py-10">
         <SectionTag
           text="About us"
-          
+          color="dishycoral"
         />
       </PageMargin>
       <PageMargin>
