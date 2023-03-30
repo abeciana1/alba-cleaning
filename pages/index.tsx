@@ -1,10 +1,17 @@
 import { useEffect, useState } from 'react';
 import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
-import { TopHeroSection, HeroSection, HeroSectionReverse, TwoColGrid } from '@/components/sections'
+import {
+  TopHeroSection,
+  HeroSection,
+  HeroSectionReverse,
+  TwoColGrid,
+  ThreeColGrid
+} from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -35,7 +42,7 @@ export default function Home() {
           height: 1333
         }}
       />
-      <PageMargin addClass="py-10 md:py-20 bg-gradient-to-r from-skyblue-100">
+      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-r from-skyblue-100">
         <SectionTag
           text="About us"
           color="dishycoral"
@@ -52,6 +59,18 @@ export default function Home() {
             </div>
           </section>
         </TwoColGrid>
+        <ThreeColGrid>
+          <section></section>
+          <section>
+            <Image
+              src="/gloves-heart.webp"
+              alt="gloves creating heart"
+              width={2000}
+              height={1333}
+            />
+          </section>
+          <section></section>
+        </ThreeColGrid>
       </PageMargin>
       <PageMargin>
         <section className="mt-20">

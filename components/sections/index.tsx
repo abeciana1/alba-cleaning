@@ -94,15 +94,13 @@ export const TwoColGrid: React.FC<PropChildI> = ({
     )
 }
 
-            // <section>
-                {/* <h1 className="text-charcoal text-4xl lg:text-5xl">{title}</h1>
-                <div className="lg:w-3/4 text-2xl lg:text-3xl text-charcoal">{ body }</div>
-            </section>
-            <section>
-                <Image
-                    src={image.image}
-                    alt={image.alt}
-                    height={image.height}
-                    width={image.width}
-                />
-            </section> */}
+export const ThreeColGrid: React.FC<PropChildI> = ({
+    children
+}) => {
+    
+    return (
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 md:pt-20 md:py-0 gap-20 items-center">
+            { children }
+        </section>
+    )
+}
