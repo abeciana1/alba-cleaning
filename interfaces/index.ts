@@ -36,3 +36,8 @@ export interface TeaserI {
     title: string;
     body: string;
 }
+
+export interface IconI {
+    addClass: string;
+    fill: string;
+}
