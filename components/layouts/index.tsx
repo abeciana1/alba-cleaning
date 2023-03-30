@@ -1,9 +1,12 @@
 import React from 'react'
-import { PropChildI } from '@/interfaces'
+import { PageMarginI } from '@/interfaces'
+import cx from 'classnames'
 
-export const PageMargin: React.FC<PropChildI> = ({ children }) => {
+export const PageMargin: React.FC<PageMarginI> = ({ children, addClass }) => {
     return (
-        <section className="mx-2 md:mx-12">
+        <section className={cx("px-2 md:px-12", {
+            [addClass]: addClass
+        })}>
             {children}
         </section>
     )
