@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
-import { TopHeroSection, HeroSection, HeroSectionReverse } from '@/components/sections'
+import { TopHeroSection, HeroSection, HeroSectionReverse, TwoColGrid } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
@@ -35,11 +35,23 @@ export default function Home() {
           height: 1333
         }}
       />
-      <PageMargin addClass="py-10">
+      <PageMargin addClass="py-10 md:py-20 bg-gradient-to-r from-skyblue-100">
         <SectionTag
           text="About us"
           color="dishycoral"
         />
+        <TwoColGrid>
+          <section>
+            <h1 className="text-charcoal text-4xl lg:text-5xl">
+              Local, family owned and operated
+            </h1>
+          </section>
+          <section>
+            <div className="lg:w-3/4 text-2xl lg:text-3xl text-charcoal">
+              Trust your home or office with a family business that cares about you!
+            </div>
+          </section>
+        </TwoColGrid>
       </PageMargin>
       <PageMargin>
         <section className="mt-20">
