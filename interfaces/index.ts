@@ -24,3 +24,8 @@ export interface HeroSectionI {
     body: string;
     image: SliderImageT
 }
+
+export interface SectionTagI {
+    text: string;
+    color: string
+}
