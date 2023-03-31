@@ -1,8 +1,9 @@
 import React from 'react'
-import { TeaserI } from '@/interfaces'
+import { TeaserIconI, TeaserImgI } from '@/interfaces'
 import cx from 'classnames'
+import Image from 'next/image'
 
-export const TeaserWithIcon: React.FC<TeaserI> = ({
+export const TeaserWithIcon: React.FC<TeaserIconI> = ({
     title,
     body,
     icon,
@@ -30,11 +31,11 @@ export const TeaserWithIcon: React.FC<TeaserI> = ({
     )
 }
 
-export const TeaserWithImg: React.FC<TeaserI> = ({
+export const TeaserWithImg: React.FC<TeaserImgI> = ({
     title,
     body,
-    icon,
-    iconClass,
+    image,
+    imageClass,
     teaserClass = ""
 }) => {
 
@@ -43,9 +44,12 @@ export const TeaserWithImg: React.FC<TeaserI> = ({
             [teaserClass]: teaserClass
         })}>
             <div className="flex items-center">
-                <Icon
-                    fill="background"
-                    addClass={iconClass}
+                <Image
+                    src={image.image}
+                    alt={image.alt}
+                    height={image.height}
+                    width={image.width}
+                    className={imageClass}
                 />
                 <span className="pl-5 text-lg font-medium">{title}</span>
             </div>

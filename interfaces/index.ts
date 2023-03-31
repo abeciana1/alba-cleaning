@@ -32,11 +32,19 @@ export interface SectionTagI {
     color: string
 }
 
-export interface TeaserI {
+export interface TeaserIconI {
     title: string;
     body: string;
     icon: React.ElementType;
     iconClass: string;
+    teaserClass?: string;
+}
+
+export interface TeaserImgI {
+    title: string;
+    body: string;
+    image: SliderImageT;
+    imageClass: string;
     teaserClass?: string;
 }
 
