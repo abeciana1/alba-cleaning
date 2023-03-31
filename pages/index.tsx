@@ -3,8 +3,6 @@ import { NextSeo } from 'next-seo';
 import Tips from '../lib/tips.json'
 import {
   TopHeroSection,
-  HeroSection,
-  HeroSectionReverse,
   TwoColGrid,
   FourColGrid,
   ThreeColGrid
