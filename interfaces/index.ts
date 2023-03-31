@@ -35,6 +35,7 @@ export interface SectionTagI {
 export interface TeaserI {
     title: string;
     body: string;
+    icon: React.ElementType;
 }
 
 export interface IconI {

@@ -1,9 +1,10 @@
+import React from 'react'
 import { IconI } from '@/interfaces'
 
-const callIcon = ({
+const callIcon: React.FC<IconI> = ({
     addClass,
     fill
-}: IconI) => {
+}) => {
     // width="685" height="685"
     return (
         <svg className={addClass} fill={fill} viewBox="0 0 685 685" xmlns="http://www.w3.org/2000/svg">

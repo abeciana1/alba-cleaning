@@ -69,6 +69,7 @@ export default function Home() {
           <Teaser
             title="Book your appointment"
             body=""
+            icon={callIcon}
           />
           <section>
             <Image
@@ -81,6 +82,7 @@ export default function Home() {
           <Teaser
             title="Sit back and relax"
             body=""
+            icon={relaxIcon}
           />
         </ThreeColGrid>
       </PageMargin>

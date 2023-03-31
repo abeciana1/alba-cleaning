@@ -1,9 +1,9 @@
 import { IconI } from '@/interfaces'
 
-const relaxIcon = ({
+const relaxIcon: React.FC<IconI> = ({
     addClass,
     fill
-}: IconI) => {
+}) => {
     // width="642" height="642"
     return (
         <svg className={addClass} fill={fill} viewBox="0 0 642 642" xmlns="http://www.w3.org/2000/svg">
