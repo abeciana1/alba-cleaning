@@ -37,6 +37,7 @@ export interface TeaserI {
     body: string;
     icon: React.ElementType;
     iconClass: string;
+    teaserClass?: string;
 }
 
 export interface IconI {

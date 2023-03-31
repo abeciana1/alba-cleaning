@@ -5,12 +5,12 @@ import {
   TopHeroSection,
   HeroSection,
   HeroSectionReverse,
-  TwoColGrid
+  TwoColGrid,
+  FourColGrid
 } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
-import Image from 'next/image'
 import { Teaser } from '@/components/utils/Teaser'
 import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
@@ -64,20 +64,22 @@ export default function Home() {
         <section className="text-center pt-10 md:pt-20">
           <h2 className="text-charcoal">Our two-step process</h2>
         </section>
-        <TwoColGrid>
+        <FourColGrid>
           <Teaser
             title="Contact us"
             body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
             iconClass="w-14 h-14 from-dishycoral p-3"
+            teaserClass=""
           />
           <Teaser
             title="Sit back and relax"
             body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
             iconClass="w-14 h-14 p-3 from-shadowblue"
+            teaserClass=""
           />
-        </TwoColGrid>
+        </FourColGrid>
       </PageMargin>
       <PageMargin>
         <section className="mt-20">

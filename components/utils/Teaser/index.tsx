@@ -1,17 +1,21 @@
 import React from 'react'
-import { TeaserI, IconI } from '@/interfaces'
+import { TeaserI } from '@/interfaces'
+import cx from 'classnames'
 
 export const Teaser: React.FC<TeaserI> = ({
     title,
     body,
     icon,
-    iconClass
+    iconClass,
+    teaserClass = ""
 }) => {
 
     const Icon = icon as React.ElementType
 
     return (
-        <div className="bg-background p-3 text-charcoal">
+        <div className={cx("bg-background p-3 text-charcoal", {
+            [teaserClass]: teaserClass
+        })}>
             <div className="flex items-center">
                 <Icon
                     fill="background"
