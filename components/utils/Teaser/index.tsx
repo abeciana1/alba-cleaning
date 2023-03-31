@@ -17,9 +17,11 @@ export const Teaser: React.FC<TeaserI> = ({
                     fill="background"
                     addClass={iconClass}
                 />
-                <span className="pl-5 text-lg">{title}</span>
+                <span className="pl-5 text-lg font-medium">{title}</span>
             </div>
-            {body}
+            <div>
+                {body}
+            </div>
         </div>
     )
 }

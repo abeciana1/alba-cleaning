@@ -18,15 +18,26 @@ import relaxIcon from '@/public/relax'
 
 export default function Home() {
 
+  const [currentQuote, setQuote] = useState<string>("")
+  const [ isMobile, setMobile ] = useState(false)
+
   const randomIndexNum = (): number => {
     return Math.floor(Math.random() * (Tips.length - 1))
   }
 
-  const [ currentQuote, setQuote ] = useState<string>("")
-
   useEffect(() => {
     setQuote(Tips[randomIndexNum()])
   }, [])
+
+  useEffect(() => {
+    if (window) {
+      if (window?.innerWidth < 1024) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    }
+  }, [isMobile])
 
   return (
     <>
@@ -67,24 +78,26 @@ export default function Home() {
         </section>
         <ThreeColGrid>
           <Teaser
-            title="Book your appointment"
-            body=""
+            title="Contact us"
+            body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
-            iconClass="w-12 h-12 from-dishycoral p-3"
+            iconClass="w-14 h-14 from-dishycoral p-3"
           />
-          <section>
-            <Image
-              src="/gloves-heart.webp"
-              alt="gloves creating heart"
-              width={2000}
-              height={1333}
-            />
-          </section>
+          {isMobile &&
+            <section>
+              <Image
+                src="/gloves-heart.webp"
+                alt="gloves creating heart"
+                width={2000}
+                height={1333}
+              />
+            </section>
+          }
           <Teaser
             title="Sit back and relax"
-            body=""
+            body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
-            iconClass="w-12 h-12"
+            iconClass="w-14 h-14 p-3 from-shadowblue"
           />
         </ThreeColGrid>
       </PageMargin>
