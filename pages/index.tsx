@@ -90,7 +90,7 @@ export default function Home() {
         <TwoColGrid>
           <section>
             <h1 className="text-charcoal text-4xl lg:text-5xl">
-              Our services
+              Our services for you
             </h1>
           </section>
           <section>
@@ -102,11 +102,6 @@ export default function Home() {
         <ThreeColGrid>
 
         </ThreeColGrid>
-        <section className="mt-20">
-          <h2 className="text-center">Services we offer</h2>
-          <div className="text-xl text-center"> </div>
-           {/* dusting furniture, appliances, and fixtures; vacuuming and mopping floors; thorough cleaning of each room in your house or office; sanitizing bathrooms and kitchen surfaces; as well as de-cluttering and organizing any living spaces. */}
-        </section>
         <section className="mx-auto text-center mt-20">
           <h2>A cleaning tip for you</h2>
           <TipQuote
