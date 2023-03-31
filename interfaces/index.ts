@@ -42,5 +42,4 @@ export interface TeaserI {
 
 export interface IconI {
     addClass: string;
-    fill: string;
 }

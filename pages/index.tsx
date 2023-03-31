@@ -12,7 +12,7 @@ import {
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
-import { Teaser } from '@/components/utils/Teaser'
+import { TeaserWithIcon } from '@/components/utils/Teaser'
 import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
 
@@ -66,14 +66,14 @@ export default function Home() {
           <h2 className="text-charcoal">Our two-step process</h2>
         </section>
         <FourColGrid>
-          <Teaser
+          <TeaserWithIcon
             title="Contact us"
             body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
             iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3"
             teaserClass="lg:col-start-2"
           />
-          <Teaser
+          <TeaserWithIcon
             title="Sit back and relax"
             body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
