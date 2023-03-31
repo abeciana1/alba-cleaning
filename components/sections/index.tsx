@@ -110,7 +110,7 @@ export const FourColGrid: React.FC<PropChildI> = ({
 }) => {
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 md:pt-20 md:py-0 gap-20 items-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 md:py-20 md:py-0 gap-10 items-center">
             { children }
         </section>
     )

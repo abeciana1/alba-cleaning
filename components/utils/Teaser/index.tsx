@@ -13,7 +13,7 @@ export const Teaser: React.FC<TeaserI> = ({
     const Icon = icon as React.ElementType
 
     return (
-        <div className={cx("bg-background p-3 text-charcoal", {
+        <div className={cx("bg-background p-3 text-charcoal shadow-md", {
             [teaserClass]: teaserClass
         })}>
             <div className="flex items-center">
@@ -23,7 +23,7 @@ export const Teaser: React.FC<TeaserI> = ({
                 />
                 <span className="pl-5 text-lg font-medium">{title}</span>
             </div>
-            <div>
+            <div className="pt-2 text-lg">
                 {body}
             </div>
         </div>
