@@ -13,6 +13,8 @@ import { SectionTag } from '@/components/utils/SectionTag'
 import { TeaserWithIcon } from '@/components/utils/Teaser'
 import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
+import { GetStaticProps } from 'next'
+import { gql } from 'urql';
 
 export default function Home() {
 
@@ -109,4 +111,8 @@ export default function Home() {
       </PageMargin>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  
 }
