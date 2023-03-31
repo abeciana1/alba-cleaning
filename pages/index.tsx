@@ -6,7 +6,8 @@ import {
   HeroSection,
   HeroSectionReverse,
   TwoColGrid,
-  FourColGrid
+  FourColGrid,
+  ThreeColGrid
 } from '@/components/sections'
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
@@ -81,35 +82,30 @@ export default function Home() {
           />
         </FourColGrid>
       </PageMargin>
-      <PageMargin>
-        <section className="mt-20">
-          <h2 className="text-center">Services we offer</h2>
-          <div className="text-xl text-center"> Our comprehensive cleaning package includes, but no limited to:</div>
-           {/* dusting furniture, appliances, and fixtures; vacuuming and mopping floors; thorough cleaning of each room in your house or office; sanitizing bathrooms and kitchen surfaces; as well as de-cluttering and organizing any living spaces. */}
-          <section className="mb-20">
-            <HeroSection
-              title="Your home is our home!"
-              body="Hate coming home to a cluttered mess? Tired of your weekends just to clean and organize? Let us make your mess, our mess!"
-              image={{
-                image: "https://media.graphassets.com/output=format:webp/ZpxBpBzZQxyIJ7x8zc0w",
-                alt: "Home cleaning illustration",
-                height: 1426,
-                width: 1719
-              }}
-            />
+      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-altYellow">
+        <SectionTag
+          text="Services"
+          color="dishycoral"
+        />
+        <TwoColGrid>
+          <section>
+            <h1 className="text-charcoal text-4xl lg:text-5xl">
+              Our services
+            </h1>
           </section>
           <section>
-            <HeroSectionReverse
-              title="Let us clear up the clutter!"
-              body="Impress your clients and create a healthy work environment for your team. Leave the cleaning to us and have more time to focus on your business!"
-              image={{
-                image: "https://media.graphassets.com/output=format:webp/Ms12DwtSLqIt0J8WpJOB",
-                alt: "Office cleaning illustration",
-                height: 1221,
-                width: 1688
-              }}
-            />
+            <div className="lg:w-3/4 text-2xl lg:text-3xl text-charcoal">
+              Our comprehensive cleaning package includes, but no limited to:
+            </div>
           </section>
+        </TwoColGrid>
+        <ThreeColGrid>
+
+        </ThreeColGrid>
+        <section className="mt-20">
+          <h2 className="text-center">Services we offer</h2>
+          <div className="text-xl text-center"> </div>
+           {/* dusting furniture, appliances, and fixtures; vacuuming and mopping floors; thorough cleaning of each room in your house or office; sanitizing bathrooms and kitchen surfaces; as well as de-cluttering and organizing any living spaces. */}
         </section>
         <section className="mx-auto text-center mt-20">
           <h2>A cleaning tip for you</h2>
