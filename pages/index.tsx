@@ -63,13 +63,14 @@ export default function Home() {
           </section>
         </TwoColGrid>
         <section className="text-center pt-10 md:pt-20">
-          <h2>Our two-step process</h2>
+          <h2 className="text-charcoal">Our two-step process</h2>
         </section>
         <ThreeColGrid>
           <Teaser
             title="Book your appointment"
             body=""
             icon={callIcon}
+            iconClass="w-12 h-12 "
           />
           <section>
             <Image
@@ -83,6 +84,7 @@ export default function Home() {
             title="Sit back and relax"
             body=""
             icon={relaxIcon}
+            iconClass="w-12 h-12"
           />
         </ThreeColGrid>
       </PageMargin>

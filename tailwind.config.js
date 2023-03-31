@@ -107,6 +107,9 @@ module.exports = {
           DEFAULT: "#fdf2ec"
         }
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+      }
     },
   },
   plugins: [],

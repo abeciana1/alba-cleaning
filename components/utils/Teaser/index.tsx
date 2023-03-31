@@ -4,19 +4,20 @@ import { TeaserI, IconI } from '@/interfaces'
 export const Teaser: React.FC<TeaserI> = ({
     title,
     body,
-    icon
+    icon,
+    iconClass
 }) => {
 
     const Icon = icon as React.ElementType
 
     return (
-        <div className="bg-background">
-            <div className="">
+        <div className="bg-background p-3 text-charcoal">
+            <div className="flex items-center">
                 <Icon
-                    fill="bg-background"
-                    addClass="bg-transparent"
+                    fill="background"
+                    addClass={iconClass}
                 />
-                {title}
+                <span className="pl-5 text-lg">{title}</span>
             </div>
             {body}
         </div>
