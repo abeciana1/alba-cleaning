@@ -70,7 +70,7 @@ export default function Home() {
             title="Book your appointment"
             body=""
             icon={callIcon}
-            iconClass="w-12 h-12 "
+            iconClass="w-12 h-12 from-dishycoral p-3"
           />
           <section>
             <Image
