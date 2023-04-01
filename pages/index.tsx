@@ -47,7 +47,7 @@ export default function Home({ serviceCleanings }: CleaningServices) {
           height: 1333
         }}
       />
-      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-r from-skyblue-100">
+      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-r from-skyblue-100 bg-gradient-to-t to-chineseviolet-100">
         <SectionTag
           text="About us"
           color="dishycoral"
@@ -84,7 +84,7 @@ export default function Home({ serviceCleanings }: CleaningServices) {
           />
         </FourColGrid>
       </PageMargin>
-      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-altYellow">
+      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-altYellow bg-gradient-to-t to-skyblue-100">
         <SectionTag
           text="Services"
           color="dishycoral"
