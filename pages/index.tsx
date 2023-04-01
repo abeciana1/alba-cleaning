@@ -15,11 +15,11 @@ import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
 import { GetStaticProps } from 'next'
 import { gql, GraphQLClient } from 'graphql-request'
-import { CleaningServices } from '@/interfaces'
+import { CleaningServicesI } from '@/interfaces'
 import { ServiceT } from '@/types'
 import Image from 'next/image'
 
-export default function Home({ serviceCleanings }: CleaningServices) {
+export default function Home({ serviceCleanings }: CleaningServicesI) {
 
   const [currentQuote, setQuote] = useState<string>("")
 
@@ -177,7 +177,7 @@ export const getStaticProps: GetStaticProps = async () => {
       }
     }
   `
-  const { serviceCleanings } = await serviceClient.request(servicesQuery)
+  const { serviceCleanings }: CleaningServicesI = await serviceClient.request(servicesQuery)
 
   return {
     props: {

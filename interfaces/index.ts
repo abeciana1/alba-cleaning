@@ -52,6 +52,6 @@ export interface IconI {
     addClass: string;
 }
 
-export interface CleaningServices {
+export interface CleaningServicesI {
     serviceCleanings: ServiceT[]
 }
