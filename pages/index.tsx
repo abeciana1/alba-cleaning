@@ -17,6 +17,7 @@ import { GetStaticProps } from 'next'
 import { gql, GraphQLClient } from 'graphql-request'
 import { CleaningServices } from '@/interfaces'
 import { ServiceT } from '@/types'
+import Image from 'next/image'
 
 export default function Home({ serviceCleanings }: CleaningServices) {
 
@@ -134,6 +135,23 @@ export default function Home({ serviceCleanings }: CleaningServices) {
             quote={currentQuote}
           />
         </TwoColGrid>
+        <footer className="pt-10 md:pt-20">
+          <a
+            href="https://alexbeciana.com/"
+            target="_blank"
+          >
+            <span className="flex items-center justify-center">
+              Created by
+                <Image
+                  src="https://media.graphassets.com/output=format:webp/Bwz9zHRxS1S79v3Ppax0"
+                  alt="AB Creative logo"
+                  width={896}
+                  height={570}
+                  className="w-6 ml-2"
+                />
+            </span>
+          </a>
+        </footer>
       </PageMargin>
     </>
   )
