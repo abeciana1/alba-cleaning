@@ -14,7 +14,6 @@ import { TeaserWithIcon } from '@/components/utils/Teaser'
 import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
 import { GetStaticProps } from 'next'
-import { gql } from 'urql';
 
 export default function Home() {
 
@@ -114,5 +113,27 @@ export default function Home() {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+
+  const servicesQuery = gql`
+    variables: {
+      serviceCleanings {
+        id
+        titleService
+        serviceBody
+        icon {
+          id
+          height
+          width
+          url(transformation: {document: {output: {format: webp}}})
+        }
+        color
+      }
+    }
+  `
   
+  return {
+    props: {
+      // services
+    }
+  }
 }
