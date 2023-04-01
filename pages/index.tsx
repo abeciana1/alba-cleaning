@@ -72,14 +72,14 @@ export default function Home({ serviceCleanings }: CleaningServices) {
             title="Contact us"
             body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
-            iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3"
+            iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3 rounded-xl"
             teaserClass="lg:col-start-2"
           />
           <TeaserWithIcon
             title="Sit back and relax"
             body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
-            iconClass="w-14 h-14 p-3 from-shadowblue bg-shadowblue"
+            iconClass="w-14 h-14 p-3 from-shadowblue bg-shadowblue rounded-xl"
             teaserClass="lg:col-start-3"
           />
         </FourColGrid>
@@ -122,16 +122,18 @@ export default function Home({ serviceCleanings }: CleaningServices) {
         </ThreeColGrid>
       </PageMargin>
       <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-dishycoral-100 bg-gradient-to-t to-altYellow">
-        {/* <SectionTag
+        <SectionTag
           text="Cleaning tips"
           color="dishycoral"
         />
-        <section className="mx-auto text-center mt-20">
-          <h2>A cleaning tip for you</h2>
+        <TwoColGrid>
+          <section className="mx-auto text-center">
+            <h1 className="text-charcoal text-4xl lg:text-5xl">A cleaning tip for you</h1>
+          </section>
           <TipQuote
             quote={currentQuote}
           />
-        </section> */}
+        </TwoColGrid>
       </PageMargin>
     </>
   )

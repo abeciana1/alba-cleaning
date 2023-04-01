@@ -14,7 +14,7 @@ export const TeaserWithIcon: React.FC<TeaserIconI> = ({
     const Icon = icon as React.ElementType
 
     return (
-        <div className={cx("bg-background p-3 text-charcoal shadow-md", {
+        <div className={cx("bg-background p-3 text-charcoal shadow-md rounded-xl", {
             [teaserClass]: teaserClass
         })}>
             <div className="flex items-center">
@@ -40,7 +40,7 @@ export const TeaserWithImg: React.FC<TeaserImgI> = ({
 }) => {
 
     return (
-        <div className={cx("bg-background p-3 text-charcoal shadow-md", {
+        <div className={cx("bg-background p-3 text-charcoal shadow-md h-44 rounded-xl", {
             [teaserClass]: teaserClass
         })}>
             <div className="flex items-center">
@@ -49,7 +49,7 @@ export const TeaserWithImg: React.FC<TeaserImgI> = ({
                     alt={image.alt}
                     height={image.height}
                     width={image.width}
-                    className={cx("w-14 h-14 p-3", {
+                    className={cx("w-14 h-14 p-3 rounded-xl", {
                         ['bg-skyblue']: color === 'skyblue',
                         ['bg-altPink']: color === 'mintgreen',
                         ['bg-chineseviolet']: color === 'chineseviolet',
