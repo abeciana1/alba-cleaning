@@ -8,7 +8,7 @@ export const SectionTag: React.FC<SectionTagI> = ({
 }) => {
 
     return (
-        <div className={cx("w-24 text-center rounded-full px-2 py-0.5", {
+        <div className={cx("w-fit text-center rounded-full px-3 py-0.5", {
             ['bg-dishycoral-100']: color === "dishycoral"
         })}>
             <span className={cx("text-lg", {

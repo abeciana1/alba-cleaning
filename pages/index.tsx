@@ -120,6 +120,12 @@ export default function Home({ serviceCleanings }: CleaningServices) {
             )
           })}
         </ThreeColGrid>
+      </PageMargin>
+      <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-dishycoral-100 bg-gradient-to-t to-altYellow">
+        <SectionTag
+          text="Cleaning tips"
+          color="dishycoral"
+        />
         <section className="mx-auto text-center mt-20">
           <h2>A cleaning tip for you</h2>
           <TipQuote
