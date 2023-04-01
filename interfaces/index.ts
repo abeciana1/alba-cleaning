@@ -1,5 +1,5 @@
 import React from 'react';
-import { SliderImageT } from '@/types'
+import { SliderImageT, ServiceT, ServiceIconT } from '@/types'
 
 export interface PropChildI {
     children: React.ReactNode;
@@ -43,11 +43,15 @@ export interface TeaserIconI {
 export interface TeaserImgI {
     title: string;
     body: string;
-    image: SliderImageT;
-    imageClass: string;
+    image: ServiceIconT;
     teaserClass?: string;
+    color: string;
 }
 
 export interface IconI {
     addClass: string;
+}
+
+export interface CleaningServices {
+    serviceCleanings: ServiceT[]
 }

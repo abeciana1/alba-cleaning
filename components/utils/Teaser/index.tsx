@@ -35,8 +35,8 @@ export const TeaserWithImg: React.FC<TeaserImgI> = ({
     title,
     body,
     image,
-    imageClass,
-    teaserClass = ""
+    teaserClass = "",
+    color
 }) => {
 
     return (
@@ -45,11 +45,18 @@ export const TeaserWithImg: React.FC<TeaserImgI> = ({
         })}>
             <div className="flex items-center">
                 <Image
-                    src={image.image}
+                    src={image.url}
                     alt={image.alt}
                     height={image.height}
                     width={image.width}
-                    className={imageClass}
+                    className={cx("w-14 h-14 p-3", {
+                        ['bg-skyblue']: color === 'skyblue',
+                        ['bg-altPink']: color === 'mintgreen',
+                        ['bg-chineseviolet']: color === 'chineseviolet',
+                        ['bg-shadowblue']: color === 'shadowblue',
+                        ['bg-dishycoral']: color === 'dishycoral',
+                        ['bg-charcoal']: color === 'charcoal'
+                    })}
                 />
                 <span className="pl-5 text-lg font-medium">{title}</span>
             </div>

@@ -10,12 +10,15 @@ import {
 import { TipQuote } from '@/components/Quote'
 import { PageMargin } from '@/components/layouts'
 import { SectionTag } from '@/components/utils/SectionTag'
-import { TeaserWithIcon } from '@/components/utils/Teaser'
+import { TeaserWithIcon, TeaserWithImg } from '@/components/utils/Teaser'
 import callIcon from '@/public/call'
 import relaxIcon from '@/public/relax'
 import { GetStaticProps } from 'next'
+import { gql, GraphQLClient } from 'graphql-request'
+import { CleaningServices } from '@/interfaces'
+import { ServiceT } from '@/types'
 
-export default function Home() {
+export default function Home({ serviceCleanings }: CleaningServices) {
 
   const [currentQuote, setQuote] = useState<string>("")
 
@@ -99,7 +102,23 @@ export default function Home() {
           </section>
         </TwoColGrid>
         <ThreeColGrid>
-
+          {serviceCleanings.map(({
+            id,
+            titleService,
+            serviceBody,
+            icon,
+            color
+          }: ServiceT) => {
+            return (
+              <TeaserWithImg
+                key={id}
+                title={titleService}
+                body={serviceBody}
+                image={icon}
+                color={color}
+              />
+            )
+          })}
         </ThreeColGrid>
         <section className="mx-auto text-center mt-20">
           <h2>A cleaning tip for you</h2>
@@ -114,8 +133,10 @@ export default function Home() {
 
 export const getStaticProps: GetStaticProps = async () => {
 
+  const serviceClient = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT || "")
+
   const servicesQuery = gql`
-    variables: {
+    query{
       serviceCleanings {
         id
         titleService
@@ -130,10 +151,11 @@ export const getStaticProps: GetStaticProps = async () => {
       }
     }
   `
-  
+  const { serviceCleanings } = await serviceClient.request(servicesQuery)
+
   return {
     props: {
-      // services
+      serviceCleanings
     }
   }
 }
