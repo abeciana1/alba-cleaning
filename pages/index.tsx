@@ -122,7 +122,7 @@ export default function Home({ serviceCleanings }: CleaningServices) {
         </ThreeColGrid>
       </PageMargin>
       <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-dishycoral-100 bg-gradient-to-t to-altYellow">
-        <SectionTag
+        {/* <SectionTag
           text="Cleaning tips"
           color="dishycoral"
         />
@@ -131,7 +131,7 @@ export default function Home({ serviceCleanings }: CleaningServices) {
           <TipQuote
             quote={currentQuote}
           />
-        </section>
+        </section> */}
       </PageMargin>
     </>
   )
