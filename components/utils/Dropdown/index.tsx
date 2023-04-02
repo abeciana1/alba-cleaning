@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { PropChildI } from '@/interfaces'
 import { Popover, Transition } from '@headlessui/react'
-// import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 export const Dropdown: React.FC<PropChildI> = ({
     children
