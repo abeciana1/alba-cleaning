@@ -18,6 +18,7 @@ import { gql, GraphQLClient } from 'graphql-request'
 import { CleaningServicesI } from '@/interfaces'
 import { ServiceT } from '@/types'
 import { Footer } from '@/components/utils/Footer'
+import { DropdownOption } from '@/components/utils/Dropdown/DropdownOption'
 
 export default function Home({ serviceCleanings }: CleaningServicesI) {
   const [currentQuote, setQuote] = useState<string>("")
