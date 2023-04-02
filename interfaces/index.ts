@@ -55,3 +55,11 @@ export interface IconI {
 export interface CleaningServicesI {
     serviceCleanings: ServiceT[]
 }
+
+export interface DropdownOptionI {
+    name: string;
+    href: string;
+    icon: React.ElementType;
+    iconClass: string;
+    description: string;
+}
