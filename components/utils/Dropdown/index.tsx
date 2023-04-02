@@ -3,19 +3,21 @@ import { PropChildI } from '@/interfaces'
 import { Popover, Transition } from '@headlessui/react'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-export const Dropdown: React.FC<PropChildI> = ({ children }) => {
+{/* <PropChildI> */ }
+// { children }
+export const Dropdown: React.FC = () => {
 
     return (
-        <div className="fixed top-16 w-full max-w-sm px-4">
+        <div className="w-full max-w-sm px-4">
             <Popover className="relative">
                 {({ open }) => (
                 <>
                     <Popover.Button
                     className={`
                         ${open ? '' : 'text-opacity-90'}
-                        group inline-flex items-center rounded-md bg-orange-700 px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                        group inline-flex items-center rounded-md bg-dishycoral px-3 py-2 font-medium text-charcoal`}
                     >
-                    <span>Solutions</span>
+                    <span>Contact us</span>
                     {/* <ChevronDownIcon
                         className={`${open ? '' : 'text-opacity-70'}
                         ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -53,21 +55,6 @@ export const Dropdown: React.FC<PropChildI> = ({ children }) => {
                                 </div>
                             </a>
                             ))} */}
-                        </div>
-                        <div className="bg-gray-50 p-4">
-                            <a
-                            href="##"
-                            className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                            >
-                            <span className="flex items-center">
-                                <span className="text-sm font-medium text-gray-900">
-                                Documentation
-                                </span>
-                            </span>
-                            <span className="block text-sm text-gray-500">
-                                Start integrating products and tools
-                            </span>
-                            </a>
                         </div>
                         </div>
                     </Popover.Panel>
