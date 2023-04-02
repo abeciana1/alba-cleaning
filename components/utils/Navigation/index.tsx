@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { PageMargin } from '@/components/layouts'
 import { Dropdown } from '@/components/utils/Dropdown'
+import { DropdownOption } from '@/components/utils/Dropdown/DropdownOption'
 
 export const NavBar = () => {
 

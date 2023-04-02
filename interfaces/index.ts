@@ -56,6 +56,10 @@ export interface CleaningServicesI {
     serviceCleanings: ServiceT[]
 }
 
+export interface DropdownI {
+    children: DropdownOptionI[]
+}
+
 export interface DropdownOptionI {
     name: string;
     href: string;
