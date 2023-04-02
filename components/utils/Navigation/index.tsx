@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { PageMargin } from '@/components/layouts'
 import { Dropdown } from '@/components/utils/Dropdown'
 import { DropdownOption } from '@/components/utils/Dropdown/DropdownOption'
+import callIcon from '@/public/call'
 
 export const NavBar = () => {
 
@@ -14,7 +15,22 @@ export const NavBar = () => {
                 height={438}
                 className="w-32 lg:w-44"
             />
-            <Dropdown/>
+            <Dropdown>
+                <DropdownOption
+                    name="Call us"
+                    href="tel:123-456-7890"
+                    icon={callIcon}
+                    iconClass="w-14 h-14 bg-dishycoral p-3 rounded-xl"
+                    description="Give us a call during normal business hours and make an appointment!"
+                />
+                <DropdownOption
+                    name="Call us"
+                    href="tel:123-456-7890"
+                    icon={callIcon}
+                    iconClass="w-14 h-14 bg-shadowblue p-3 rounded-xl"
+                    description="Give us a call during normal business hours and make an appointment!"
+                />
+            </Dropdown>
         </nav>
     )
 }
