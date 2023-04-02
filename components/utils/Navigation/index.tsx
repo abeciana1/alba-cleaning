@@ -3,11 +3,12 @@ import { PageMargin } from '@/components/layouts'
 import { Dropdown } from '@/components/utils/Dropdown'
 import { DropdownOption } from '@/components/utils/Dropdown/DropdownOption'
 import callIcon from '@/public/call'
+import emailIcon from '@/public/email'
 
 export const NavBar = () => {
 
     return (
-        <nav className="bg-chineseviolet-100 px-5 md:px-12 flex flex-row items-center">
+        <nav className="bg-chineseviolet-100 px-5 md:px-12 flex flex-row items-center justify-between">
             <Image
                 src="/Logo without byline.webp"
                 alt="Alba Cleaning Services logo"
@@ -26,7 +27,7 @@ export const NavBar = () => {
                 <DropdownOption
                     name="Call us"
                     href="tel:123-456-7890"
-                    icon={callIcon}
+                    icon={emailIcon}
                     iconClass="w-14 h-14 bg-shadowblue p-3 rounded-xl"
                     description="Give us a call during normal business hours and make an appointment!"
                 />

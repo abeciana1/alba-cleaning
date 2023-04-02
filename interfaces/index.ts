@@ -64,6 +64,6 @@ export interface DropdownOptionI {
     name: string;
     href: string;
     icon: React.ElementType;
-    charcoal: string;
+    iconClass: string;
     description: string;
 }

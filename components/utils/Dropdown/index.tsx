@@ -8,7 +8,7 @@ export const Dropdown: React.FC<PropChildI> = ({
 }) => {
 
     return (
-        <div className="w-full max-w-sm px-4">
+        <div className="max-w-sm">
             <Popover className="relative">
                 {({ open }) => (
                 <>
@@ -33,9 +33,11 @@ export const Dropdown: React.FC<PropChildI> = ({
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                     >
-                    <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+                    <Popover.Panel
+                        className="absolute -left-7 sm:-left-1/2 z-10 mt-3 sm:px-0 transform -translate-x-1/2 w-72 md:w-80"
+                        >
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-8 bg-white p-7">
+                        <div className="relative mx-auto grid gap-8 bg-white p-7">
                             {children}
                         </div>
                         </div>
