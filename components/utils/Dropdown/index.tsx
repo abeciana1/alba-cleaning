@@ -18,11 +18,11 @@ export const Dropdown: React.FC<PropChildI> = ({
                         group inline-flex items-center rounded-md bg-dishycoral px-3 py-2 font-medium text-charcoal`}
                     >
                     <span>Contact us</span>
-                    {/* <ChevronDownIcon
+                    <ChevronDownIcon
                         className={`${open ? '' : 'text-opacity-70'}
-                        ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80`}
+                        ml-2 h-5 w-5 text-charcoal transition duration-150 ease-in-out group-hover:text-opacity-80`}
                         aria-hidden="true"
-                    /> */}
+                    />
                     </Popover.Button>
                     <Transition
                     as={Fragment}
@@ -34,7 +34,7 @@ export const Dropdown: React.FC<PropChildI> = ({
                     leaveTo="opacity-0 translate-y-1"
                     >
                     <Popover.Panel
-                        className="absolute -left-7 sm:-left-1/2 z-10 mt-3 sm:px-0 transform -translate-x-1/2 w-72 md:w-80"
+                        className="absolute right-0 z-10 mt-3 sm:px-0 w-72 md:w-80"
                         >
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative mx-auto grid gap-8 bg-white p-7">
