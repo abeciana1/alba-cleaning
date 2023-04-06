@@ -18,7 +18,6 @@ import { gql, GraphQLClient } from 'graphql-request'
 import { CleaningServicesI } from '@/interfaces'
 import { ServiceT } from '@/types'
 import { Footer } from '@/components/utils/Footer'
-import Image from 'next/image'
 
 export default function Home({ serviceCleanings }: CleaningServicesI) {
   const [currentQuote, setQuote] = useState<string>("")
@@ -68,31 +67,20 @@ export default function Home({ serviceCleanings }: CleaningServicesI) {
         <section className="text-center pt-10 md:pt-20">
           <h2 className="text-charcoal">Our two-step process</h2>
         </section>
-        <section className="relative hidden lg:block">
-          <Image
-            src="https://media.graphassets.com/output=format:webp/FauvVyFQeGfRjCOM8kQp"
-            alt="floor cleaning person"
-            height={1482}
-            width={2000}
-            className="absolute w-1/2 md:-right-36 lg:-right-56"
-          />
-        </section>
-        <FourColGrid>
+        <TwoColGrid>
           <TeaserWithIcon
             title="Contact us"
             body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
             iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3 rounded-xl"
-            teaserClass="lg:col-start-2"
           />
           <TeaserWithIcon
             title="Sit back and relax"
             body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
             iconClass="w-14 h-14 p-3 from-shadowblue bg-shadowblue rounded-xl"
-            teaserClass="lg:col-start-3"
           />
-        </FourColGrid>
+        </TwoColGrid>
       </PageMargin>
       <PageMargin addClass="pt-10 md:pt-20 bg-gradient-to-l from-altYellow bg-gradient-to-t to-skyblue-100">
         <SectionTag
@@ -136,14 +124,12 @@ export default function Home({ serviceCleanings }: CleaningServicesI) {
           text="Cleaning tips"
           color="dishycoral"
         />
-        <TwoColGrid>
-          <section className="mx-auto text-center">
-            <h1 className="text-charcoal text-4xl lg:text-5xl">A cleaning tip for you</h1>
-          </section>
+        <section className="mx-auto text-center">
+          <h1 className="text-charcoal text-4xl lg:text-5xl py-5">A cleaning tip for you</h1>
           <TipQuote
             quote={currentQuote}
           />
-        </TwoColGrid>
+        </section>
         <Footer/>
       </PageMargin>
     </>
