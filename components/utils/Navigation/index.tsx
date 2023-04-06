@@ -8,7 +8,7 @@ import emailIcon from '@/public/email'
 export const NavBar = () => {
 
     return (
-        <nav className="bg-chineseviolet-100 px-5 md:px-12 flex flex-row items-center justify-between">
+        <nav className="bg-chineseviolet-100 py-3 px-3 md:px-12 flex flex-row items-center justify-between">
             <Image
                 src="/Logo without byline.webp"
                 alt="Alba Cleaning Services logo"
