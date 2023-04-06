@@ -18,6 +18,7 @@ import { gql, GraphQLClient } from 'graphql-request'
 import { CleaningServicesI } from '@/interfaces'
 import { ServiceT } from '@/types'
 import { Footer } from '@/components/utils/Footer'
+import Image from 'next/image'
 
 export default function Home({ serviceCleanings }: CleaningServicesI) {
   const [currentQuote, setQuote] = useState<string>("")
@@ -66,6 +67,15 @@ export default function Home({ serviceCleanings }: CleaningServicesI) {
         </TwoColGrid>
         <section className="text-center pt-10 md:pt-20">
           <h2 className="text-charcoal">Our two-step process</h2>
+        </section>
+        <section className="relative hidden lg:block">
+          <Image
+            src="https://media.graphassets.com/output=format:webp/FauvVyFQeGfRjCOM8kQp"
+            alt="floor cleaning person"
+            height={1482}
+            width={2000}
+            className="absolute w-1/2 md:-right-36 lg:-right-56"
+          />
         </section>
         <FourColGrid>
           <TeaserWithIcon
