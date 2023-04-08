@@ -72,13 +72,13 @@ export default function Home({ serviceCleanings }: CleaningServicesI) {
             title="Contact us"
             body="Send us an email or give us a call. We'll assess your needs and set up an appointment."
             icon={callIcon}
-            iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3 rounded-xl"
+            iconClass="w-14 h-14 bg-dishycoral from-dishycoral p-3 rounded-xl fill-background"
           />
           <TeaserWithIcon
             title="Sit back and relax"
             body="We clean and you relax. We'll take over the chores, allowing you to relax and be worry-free."
             icon={relaxIcon}
-            iconClass="w-14 h-14 p-3 from-shadowblue bg-shadowblue rounded-xl"
+            iconClass="w-14 h-14 p-3 from-shadowblue bg-shadowblue rounded-xl fill-background"
           />
         </TwoColGrid>
       </PageMargin>

@@ -21,14 +21,14 @@ export const NavBar = () => {
                     name="Call us"
                     href="tel:123-456-7890"
                     icon={callIcon}
-                    iconClass="w-14 h-14 bg-dishycoral p-3 rounded-xl"
+                    iconClass="w-14 h-14 bg-dishycoral p-3 rounded-xl fill-background"
                     description="Give us a call during normal business hours and make an appointment or ask questions!"
                 />
                 <DropdownOption
                     name="Email us"
                     href="tel:123-456-7890"
                     icon={emailIcon}
-                    iconClass="w-14 h-14 bg-shadowblue p-3 rounded-xl"
+                    iconClass="w-14 h-14 bg-shadowblue p-3 rounded-xl fill-background"
                     description="Send us any questions you may have or make an appointment!"
                 />
             </Dropdown>
